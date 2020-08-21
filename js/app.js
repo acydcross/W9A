@@ -1,10 +1,10 @@
 var is_subscribed = [true, false, true, false];
-var userAge = ["16", "17", "18", "19"];
+var userAge = [16, 17, 18, 19];
 
 console.log(userAge);
 console.log(is_subscribed);
 
-for(index = 0; index < 6; index++) {
+for(index = 0; index < userAge.length; index++) {
     if((userAge[index] < 18) && (is_subscribed[index] != true)) {
         console.log("the user is younger than 18 and not subscribed");
     }
